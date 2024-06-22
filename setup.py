@@ -5,7 +5,7 @@ with open("README.md", "r") as r:
 
 setup(
     name="dtgn", #
-    version="1.0.0",
+    version="1.0.1",
     author="5f0",
     url="https://github.com/5f0ne/dtgn",
     description="Creates folder structures and puts data in it",

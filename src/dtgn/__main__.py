@@ -22,13 +22,13 @@ def main(args_=None):
     out = Output()
     out.printHeader()
 
+    # Create root path
+    rootPath = os.path.join(args.path, args.rootName)
+
     if(args.purge):
-        Util.purge(args.path)
+        Util.purge(rootPath)
         print("Files under " + args.path + " purged!")
     else:
-
-        # Create root path
-        rootPath = os.path.join(args.path, args.rootName)
         # Print argument configuration
         out.printFolderFileInfo(args, rootPath)
 
