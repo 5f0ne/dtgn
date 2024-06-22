@@ -1,12 +1,12 @@
 import os
 import sys
 import random
+import shutil
 import argparse
 
 from pathlib import Path
 
 from dtgn.args.Args import Args
-from dtgn.util.Util import Util
 from dtgn.output.Output import Output
 
 def main(args_=None):
@@ -26,8 +26,8 @@ def main(args_=None):
     rootPath = os.path.join(args.path, args.rootName)
 
     if(args.purge):
-        Util.purge(rootPath)
-        print("Files under " + args.path + " purged!")
+        shutil.rmtree(rootPath)
+        print(rootPath + " purged!")
     else:
         # Print argument configuration
         out.printFolderFileInfo(args, rootPath)
@@ -57,7 +57,6 @@ def main(args_=None):
             rootPath = f
         out.printSizeInfo(totalSize)
 
-    
     out.printExecutionTime()
 
 
