@@ -16,7 +16,7 @@ Creates folder structures and puts data in it.
 |---|---|---|---|---|
 |--mode | -m | String | fixed | Data Creation Mode <br> **fixed**: all files will be created the same size. Size is taken fom fileMinSize argument. <br> **random**: the files created will have a random size between fileMinSize and fileMaxSize argument. |
 |--path | -p | String | - | Path under which the folder structure shall be located |
-|--rootName | -r | String | data_creator | The name of the root folder created under path argument |
+|--rootName | -r | String | dtgn | The name of the root folder created under path argument |
 |--depth | -d | Integer | 1 | The depth of the folder structure |
 |--fileCount | -f | Integer | 1 | Nr. of files per folder depth|
 |--fileMinSize | -g | Integer | 2000 | The minium file size in bytes |
